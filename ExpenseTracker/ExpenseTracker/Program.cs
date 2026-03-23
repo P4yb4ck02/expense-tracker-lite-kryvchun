@@ -56,6 +56,7 @@ namespace ExpenseTrackerLite
             }
             else if (command == "2")
             {
+                Log("User requested total amount");
                 Console.WriteLine($"Total expenses: {service.GetTotal()}");
             }
             else
