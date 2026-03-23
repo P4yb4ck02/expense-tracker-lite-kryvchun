@@ -13,3 +13,8 @@ C:\Users\Влад\Desktop\КАІ ЛАБИ\2 СЕМЕСТР\DEVOPS\ЛР2\ExpenseT
 C:\Users\Влад\Desktop\КАІ ЛАБИ\2 СЕМЕСТР\DEVOPS\ЛР2\ExpenseTracker\expense-tracker-lite-kryvchun\ExpenseTracker\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.pdb
 C:\Users\Влад\Desktop\КАІ ЛАБИ\2 СЕМЕСТР\DEVOPS\ЛР2\ExpenseTracker\expense-tracker-lite-kryvchun\ExpenseTracker\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.genruntimeconfig.cache
 C:\Users\Влад\Desktop\КАІ ЛАБИ\2 СЕМЕСТР\DEVOPS\ЛР2\ExpenseTracker\expense-tracker-lite-kryvchun\ExpenseTracker\ExpenseTracker\obj\Debug\net10.0\ref\ExpenseTracker.dll
+C:\Users\Влад\Desktop\КАІ ЛАБИ\2 СЕМЕСТР\DEVOPS\ЛР2\ExpenseTracker\expense-tracker-lite-kryvchun\ExpenseTracker\ExpenseTracker\bin\Debug\net10.0\xunit.abstractions.dll
+C:\Users\Влад\Desktop\КАІ ЛАБИ\2 СЕМЕСТР\DEVOPS\ЛР2\ExpenseTracker\expense-tracker-lite-kryvchun\ExpenseTracker\ExpenseTracker\bin\Debug\net10.0\xunit.assert.dll
+C:\Users\Влад\Desktop\КАІ ЛАБИ\2 СЕМЕСТР\DEVOPS\ЛР2\ExpenseTracker\expense-tracker-lite-kryvchun\ExpenseTracker\ExpenseTracker\bin\Debug\net10.0\xunit.core.dll
+C:\Users\Влад\Desktop\КАІ ЛАБИ\2 СЕМЕСТР\DEVOPS\ЛР2\ExpenseTracker\expense-tracker-lite-kryvchun\ExpenseTracker\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.csproj.AssemblyReference.cache
+C:\Users\Влад\Desktop\КАІ ЛАБИ\2 СЕМЕСТР\DEVOPS\ЛР2\ExpenseTracker\expense-tracker-lite-kryvchun\ExpenseTracker\ExpenseTracker\obj\Debug\net10.0\ExpenseT.567C5DF3.Up2Date
