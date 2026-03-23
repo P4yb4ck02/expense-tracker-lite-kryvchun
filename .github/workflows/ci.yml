@@ -7,6 +7,11 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    
+    # Додаємо робочу директорію для всіх кроків
+    defaults:
+      run:
+        working-directory: ./ExpenseTracker
 
     steps:
     - name: Checkout code
