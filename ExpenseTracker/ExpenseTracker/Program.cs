@@ -8,6 +8,8 @@ namespace ExpenseTrackerLite
         {
             var service = new ExpenseService();
 
+            Console.WriteLine("Application started from main branch");
+
             while (true)
             {
                 ShowMenu();
