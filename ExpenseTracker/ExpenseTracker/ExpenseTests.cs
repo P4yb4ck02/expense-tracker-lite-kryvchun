@@ -29,7 +29,7 @@ namespace ExpenseTrackerLite.Tests
         [InlineData(-5, false)]
         public void IsValidAmount_ShouldValidateCorrectly(decimal amount, bool expected)
         {
- 
+
             bool result = Validator.IsValidAmount(amount);
 
             Assert.Equal(expected, result);
