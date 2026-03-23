@@ -26,6 +26,13 @@ namespace ExpenseTrackerLite
                 if (command == "1")
                 {
                     decimal amount = InputHelper.ReadDecimal("Enter expense amount: ");
+
+                    if (!Validator.IsValidAmount(amount))
+                    {
+                        Console.WriteLine("Amount must be greater than 0.");
+                        continue;
+                    }
+
                     service.AddExpense(amount);
                     Console.WriteLine("Expense added.");
                 }

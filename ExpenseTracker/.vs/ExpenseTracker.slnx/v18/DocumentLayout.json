@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{CEF96206-638F-D42C-EC66-B3D63A12BF07}|ExpenseTracker\\ExpenseTracker.csproj|solutionrelative:expensetracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CEF96206-638F-D42C-EC66-B3D63A12BF07}|ExpenseTracker\\ExpenseTracker.csproj|c:\\users\\\u0432\u043B\u0430\u0434\\desktop\\\u043A\u0430\u0456 \u043B\u0430\u0431\u0438\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\devops\\\u043B\u04402\\expensetracker\\expense-tracker-lite-kryvchun\\expensetracker\\expensetracker\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF96206-638F-D42C-EC66-B3D63A12BF07}|ExpenseTracker\\ExpenseTracker.csproj|solutionrelative:expensetracker\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CEF96206-638F-D42C-EC66-B3D63A12BF07}|ExpenseTracker\\ExpenseTracker.csproj|c:\\users\\\u0432\u043B\u0430\u0434\\desktop\\\u043A\u0430\u0456 \u043B\u0430\u0431\u0438\\2 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\devops\\\u043B\u04402\\expensetracker\\expense-tracker-lite-kryvchun\\expensetracker\\expensetracker\\inputhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF96206-638F-D42C-EC66-B3D63A12BF07}|ExpenseTracker\\ExpenseTracker.csproj|solutionrelative:expensetracker\\inputhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u043B\u0430\u0434\\Desktop\\\u041A\u0410\u0406 \u041B\u0410\u0411\u0418\\2 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\DEVOPS\\\u041B\u04202\\ExpenseTracker\\expense-tracker-lite-kryvchun\\ExpenseTracker\\ExpenseTracker\\Validator.cs",
+              "RelativeDocumentMoniker": "ExpenseTracker\\Validator.cs",
+              "ToolTip": "C:\\Users\\\u0412\u043B\u0430\u0434\\Desktop\\\u041A\u0410\u0406 \u041B\u0410\u0411\u0418\\2 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\DEVOPS\\\u041B\u04202\\ExpenseTracker\\expense-tracker-lite-kryvchun\\ExpenseTracker\\ExpenseTracker\\Validator.cs",
+              "RelativeToolTip": "ExpenseTracker\\Validator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T00:46:40.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "InputHelper.cs",
               "DocumentMoniker": "C:\\Users\\\u0412\u043B\u0430\u0434\\Desktop\\\u041A\u0410\u0406 \u041B\u0410\u0411\u0418\\2 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\DEVOPS\\\u041B\u04202\\ExpenseTracker\\expense-tracker-lite-kryvchun\\ExpenseTracker\\ExpenseTracker\\InputHelper.cs",
               "RelativeDocumentMoniker": "ExpenseTracker\\InputHelper.cs",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "ExpenseTracker\\InputHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T00:38:35.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-23T00:38:35.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ExpenseService.cs",
               "DocumentMoniker": "C:\\Users\\\u0412\u043B\u0430\u0434\\Desktop\\\u041A\u0410\u0406 \u041B\u0410\u0411\u0418\\2 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\DEVOPS\\\u041B\u04202\\ExpenseTracker\\expense-tracker-lite-kryvchun\\ExpenseTracker\\ExpenseTracker\\ExpenseService.cs",
               "RelativeDocumentMoniker": "ExpenseTracker\\ExpenseService.cs",
@@ -57,7 +73,7 @@
               "RelativeDocumentMoniker": "ExpenseTracker\\Program.cs",
               "ToolTip": "C:\\Users\\\u0412\u043B\u0430\u0434\\Desktop\\\u041A\u0410\u0406 \u041B\u0410\u0411\u0418\\2 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\DEVOPS\\\u041B\u04202\\ExpenseTracker\\expense-tracker-lite-kryvchun\\ExpenseTracker\\ExpenseTracker\\Program.cs",
               "RelativeToolTip": "ExpenseTracker\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T00:28:19.989Z",
               "EditorCaption": ""
