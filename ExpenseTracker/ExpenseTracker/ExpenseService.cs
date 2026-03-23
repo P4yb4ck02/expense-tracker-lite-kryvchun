@@ -16,7 +16,7 @@ namespace ExpenseTrackerLite
             decimal total = 0;
             foreach (var expense in _expenses)
             {
-                total -= expense; // BUG: тут помилка
+                total += expense; // FIX
             }
             return total;
         }
