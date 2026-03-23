@@ -10,12 +10,7 @@ namespace ExpenseTrackerLite
 
             while (true)
             {
-                Console.WriteLine();
-                Console.WriteLine("Expense Tracker Lite");
-                Console.WriteLine("1 - Add expense");
-                Console.WriteLine("2 - Show total");
-                Console.WriteLine("0 - Exit");
-
+                ShowMenu();
                 string command = InputHelper.ReadString("Choose option: ");
 
                 if (command == "0")
@@ -23,27 +18,41 @@ namespace ExpenseTrackerLite
                     break;
                 }
 
-                if (command == "1")
-                {
-                    decimal amount = InputHelper.ReadDecimal("Enter expense amount: ");
+                HandleCommand(command, service);
+            }
+        }
 
-                    if (!Validator.IsValidAmount(amount))
-                    {
-                        Console.WriteLine("Amount must be greater than 0.");
-                        continue;
-                    }
+        private static void ShowMenu()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Expense Tracker Lite");
+            Console.WriteLine("1 - Add expense");
+            Console.WriteLine("2 - Show total");
+            Console.WriteLine("0 - Exit");
+        }
 
-                    service.AddExpense(amount);
-                    Console.WriteLine("Expense added.");
-                }
-                else if (command == "2")
+        private static void HandleCommand(string command, ExpenseService service)
+        {
+            if (command == "1")
+            {
+                decimal amount = InputHelper.ReadDecimal("Enter expense amount: ");
+
+                if (!Validator.IsValidAmount(amount))
                 {
-                    Console.WriteLine($"Total expenses: {service.GetTotal()}");
+                    Console.WriteLine("Amount must be greater than 0.");
+                    return;
                 }
-                else
-                {
-                    Console.WriteLine("Unknown command.");
-                }
+
+                service.AddExpense(amount);
+                Console.WriteLine("Expense added.");
+            }
+            else if (command == "2")
+            {
+                Console.WriteLine($"Total expenses: {service.GetTotal()}");
+            }
+            else
+            {
+                Console.WriteLine("Unknown command.");
             }
         }
     }
