@@ -16,9 +16,14 @@ namespace ExpenseTrackerLite
             decimal total = 0;
             foreach (var expense in _expenses)
             {
-                total += expense;
+                total -= expense; // BUG: тут помилка
             }
             return total;
+        }
+
+        public int GetCount()
+        {
+            return _expenses.Count;
         }
     }
 }
