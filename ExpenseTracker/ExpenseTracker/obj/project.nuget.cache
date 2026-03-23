@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "KqPSgZTT6lo=",
+  "dgSpecHash": "G9UsKeBRKJI=",
   "success": true,
   "projectFilePath": "C:\\Users\\Влад\\Desktop\\КАІ ЛАБИ\\2 СЕМЕСТР\\DEVOPS\\ЛР2\\ExpenseTracker\\expense-tracker-lite-kryvchun\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Влад\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\Влад\\.nuget\\packages\\xunit.assert\\2.9.3\\xunit.assert.2.9.3.nupkg.sha512",
+    "C:\\Users\\Влад\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512"
+  ],
   "logs": []
 }
