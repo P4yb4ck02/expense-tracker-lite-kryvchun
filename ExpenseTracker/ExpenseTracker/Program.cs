@@ -61,6 +61,7 @@ namespace ExpenseTrackerLite
             }
             else
             {
+                Log("Unknown command entered: " + command);
                 Console.WriteLine("Unknown command.");
             }
         }
