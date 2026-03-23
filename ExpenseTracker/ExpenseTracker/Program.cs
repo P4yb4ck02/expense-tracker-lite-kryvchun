@@ -8,7 +8,6 @@ namespace ExpenseTrackerLite
         {
             var service = new ExpenseService();
 
-
             Console.WriteLine("MAIN BRANCH START");
             Log("Application started");
 
