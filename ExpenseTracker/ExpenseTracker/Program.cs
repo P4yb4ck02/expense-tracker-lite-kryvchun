@@ -8,15 +8,20 @@ namespace ExpenseTrackerLite
         {
             var service = new ExpenseService();
 
+
             Console.WriteLine("MAIN BRANCH START");
+            Log("Application started");
+
 
             while (true)
             {
                 ShowMenu();
                 string command = InputHelper.ReadString("Choose option: ");
+                Log("User selected option: " + command);
 
                 if (command == "0")
                 {
+                    Log("Application exited");
                     break;
                 }
 
@@ -46,6 +51,7 @@ namespace ExpenseTrackerLite
                 }
 
                 service.AddExpense(amount);
+                Log("Expense added: " + amount);
                 Console.WriteLine("Expense added.");
             }
             else if (command == "2")
@@ -56,6 +62,11 @@ namespace ExpenseTrackerLite
             {
                 Console.WriteLine("Unknown command.");
             }
+        }
+
+        private static void Log(string message)
+        {
+            Console.WriteLine("[LOG] " + message);
         }
     }
 }
