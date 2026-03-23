@@ -1,0 +1,32 @@
+name: CI Pipeline
+
+on:
+  pull_request:
+    branches: [ main ] # Запускати на Pull Request 
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '10.0'
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Linting Check (Code Format)
+      run: dotnet format --verify-no-changes # Перевірка форматування (Linting) [cite: 72]
+
+    - name: Run Unit Tests
+      run: dotnet test --no-build --verbosity normal # Запуск тестів [cite: 70]
+      # Пайплайн впаде автоматично, якщо тест не пройде [cite: 71]
+
+    - name: Static Analysis (Security Scan)
+      run: dotnet list package --vulnerable # Простий аналіз безпеки [cite: 73]
