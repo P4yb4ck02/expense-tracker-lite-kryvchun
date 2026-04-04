@@ -88,14 +88,13 @@ jobs:
       - name: Run Smoke Tests Simulation
         run: |
           echo "Starting smoke tests in Staging environment..."
-          # Імітація тесту Assert.Equals(1, 1)
-          if [ 1 -eq 1 ]; then
-            echo "Smoke test passed: 1 equals 1"
+          # Змінюємо умову на хибну (1 не дорівнює 2)
+          if [ 1 -eq 2 ]; then 
+            echo "Smoke test passed"
           else
-            echo "Smoke test failed"
-            exit 1
+            echo "Smoke test failed!"
+            exit 1 # Це змусить пайплайн зупинитися
           fi
-          echo "Staging environment is stable."
 
   # Stage 5: Deploy to Production
   deploy_production:
