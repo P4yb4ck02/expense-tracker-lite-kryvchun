@@ -29,6 +29,7 @@ jobs:
       - name: Run Unit Tests
         # Етап завершиться помилкою, якщо хоча б один тест впаде
         run: dotnet test --no-restore --verbosity normal
+  
   # Stage 2: Build
   build:
     name: Build Project and Create Artifact
@@ -50,7 +51,7 @@ jobs:
         run: dotnet publish -c Release -o ./publish # Реальна збірка проєкту 
 
       - name: Create Simulation File
-        run: echo "Build version 1.0.${{ github.run_number }} ready" > ./publish/version.txt # Імітація текстового артифакта [cite: 33]
+        run: echo "Build version 1.0.${{ github.run_number }} ready" > ./publish/version.txt # Імітація текстового артифакта
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
@@ -76,4 +77,42 @@ jobs:
           ls -R ./staging-app
           echo "Content of version.txt:"
           cat ./staging-app/version.txt
-          echo "Deployment to Staging successful!" # Імітація деплою через вивід даних [cite: 35, 36]
+          echo "Deployment to Staging successful!" # Імітація деплою через вивід даних
+
+  # Stage 4: Verify Staging
+  verify_staging:
+    name: Verify Staging (Smoke Tests)
+    needs: deploy_staging
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Smoke Tests Simulation
+        run: |
+          echo "Starting smoke tests in Staging environment..."
+          # Імітація тесту Assert.Equals(1, 1)
+          if [ 1 -eq 1 ]; then
+            echo "Smoke test passed: 1 equals 1"
+          else
+            echo "Smoke test failed"
+            exit 1
+          fi
+          echo "Staging environment is stable."
+
+  # Stage 5: Deploy to Production
+  deploy_production:
+    name: Deploy to Production
+    needs: verify_staging
+    runs-on: ubuntu-latest
+    # Вказуємо середовище для активації Manual Approval на GitHub
+    environment: production 
+    steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: expense-tracker-app
+          path: ./prod-app
+
+      - name: Final Deploy to Production
+        run: |
+          echo "DEPLOYING TO PRODUCTION SERVER..."
+          cat ./prod-app/version.txt
+          echo "App is live at production.expensetracker.com"
