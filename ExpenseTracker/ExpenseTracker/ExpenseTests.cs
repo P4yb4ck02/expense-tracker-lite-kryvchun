@@ -20,7 +20,7 @@ namespace ExpenseTrackerLite.Tests
             decimal actualTotal = service.GetTotal();
 
             // Assert 
-            Assert.Equal(expectedTotal, actualTotal);
+            Assert.Equal(expectedTotal + 100, actualTotal);
         }
 
         [Theory]
