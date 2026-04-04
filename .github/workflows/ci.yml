@@ -95,7 +95,7 @@ jobs:
             echo "Smoke test failed"
             exit 1
           fi
-          echo "Staging environment is stable."
+          echo "Staging environment is stable." 
 
   # Stage 5: Deploy to Production
   deploy_production:
